@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<EditText 
+android:layout_height="wrap_content"
+android:id="@+id/address"
+android:layout_width="fill_parent"
+android:text="@string/getwebpage_server"
+>
+</EditText>
+<Button
+ android:id="@+id/ButtonGo" 
+ android:layout_width="wrap_content" 
+ android:layout_height="wrap_content"
+ android:text="@string/getwebpage_button_go_title"
+ >
+</Button>
+<Button
+ android:id="@+id/ButtonBack" 
+ android:layout_width="wrap_content" 
+ android:layout_height="wrap_content"
+ android:text="@string/getwebpage_button_back_title"
+ >
+</Button>
+<Button
+ android:id="@+id/ButtonVibe" 
+ android:layout_width="wrap_content" 
+ android:layout_height="wrap_content"
+ android:text="@string/getwebpage_button_vibe_title"
+ >
+</Button>
+<Button
+ android:id="@+id/ButtonScan" 
+ android:layout_width="wrap_content" 
+ android:layout_height="wrap_content"
+ android:text="@string/getwebpage_button_scan_title"
+ >
+</Button>
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:background="#ffffff"
+    android:textColor="#000000"
+	android:id="@+id/pagetext"
+    />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">Wednesday23PM</string>
+    <string name="title_firstitem_detail">FirstItem Detail</string>
+    <string name="title_firstitem_list">ViKapp</string>
+    <string name="title_getwebpage">GetWebPage Name</string>
+    <string name="getwebpage_server">http://moilerat.free.fr</string>
+    <string name="getwebpage_button_go_title">Go !</string>
+    <string name="getwebpage_button_back_title">Back !</string>
+    <string name="getwebpage_button_scan_title">Scan</string>
+    <string name="getwebpage_button_vibe_title">Vibrato</string>
+    <string name="getwebpage_button_loc_title">Location</string>
+    <string name="getwebpage_button_sql_title">Sql</string>
+    <string name="title_location_activity">Location Name</string>
+    <string name="title_nfc_activity">Nfc Name</string>
+    <string name="title_sql_activity">Sql Name</string>
+    <string name="location_button_loc_title">Location loc</string>
+    <string name="stop_location_button_loc_title">Stop Locating</string>
+    <string name="start_nfc_button_title">Start NFC</string>
+    <string name="stop_nfc_button_title">Stop NFC</string>
+    <string name="sql_button">Record Sql</string>
+    <string name="item_1">Item 1</string>
+    <string name="take_picture_activity_title">Take Picture Activity</string>
+    <string name="take_picture_button_title">Take Picture</string>
+    <string name="button_take_picture">Take Picture</string>
+    <string name="item_3">Item 3</string>
+    <string name="sql_clear_button">Clear Sql Database</string>
+    <string name="sql_record_last_location_button">Record Last Location</string>
+    <string name="button_display_content">Display Content</string>
+    <string name="title_map_activity">Google Map Activity</string>
+
+</resources>

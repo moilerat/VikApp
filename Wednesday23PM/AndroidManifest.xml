@@ -1,0 +1,94 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="victor.wednesday23pm"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="auto" >
+    <!--  preferExternal -->
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+<uses-permission android:name="android.permission.VIBRATE"/>
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.NFC" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+<uses-feature android:name="android.hardware.camera" />
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+<uses-library android:name="com.google.android.maps"/>
+        <activity
+            android:name=".FirstItemListActivity"
+            android:label="@string/title_firstitem_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FirstItemDetailActivity"
+            android:label="@string/title_firstitem_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FirstItemListActivity" />
+        </activity>
+        <activity
+            android:name=".MyMapActivity"
+            android:label="@string/title_map_activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyMapActivity" />
+        </activity>
+        <activity
+            android:name=".GetWebPage"
+            android:label="@string/title_getwebpage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GetWebPage" />
+        </activity>
+        <activity
+            android:name=".LocationActivity"
+            android:label="@string/title_location_activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LocationActivity" />
+        </activity>
+        <activity
+            android:name=".SqlActivity"
+            android:label="@string/title_sql_activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SqlActivity" />
+        </activity>
+        <activity
+            android:name=".NfcActivity"
+            android:label="@string/title_nfc_activity" >
+            
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NfcActivity" />
+        </activity>
+        <activity
+            android:name=".TakePicture"
+            android:label="@string/take_picture_activity_title" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TakePicture" />
+        </activity>
+        
+<com.google.android.maps.MapView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:enabled="true"
+  android:clickable="true"
+  android:apiKey="0apaAuDHJlMfmcapHtigiSwP7UYpC6pcxnLUtog"/>
+    </application>
+
+</manifest>
