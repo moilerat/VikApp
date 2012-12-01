@@ -138,9 +138,10 @@ public class SqlActivity extends Activity {
 		        onCreate(db);
 			}
 		  }
-
+ 
 		  public void clear(SQLiteDatabase db) {
-		    db.execSQL("DELETE FROM  " + TABLE_LOCATIONS );
+			// VR clear since I have no back up currently TODO : add a backup, how ? I don't know !
+		    //db.execSQL("DELETE FROM  " + TABLE_LOCATIONS );
 		    // " + TABLE_LOCATIONS ?? 
 		  }
 

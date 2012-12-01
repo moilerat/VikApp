@@ -31,7 +31,7 @@ public class LocationActivity extends Activity {
     LocationListener mlocListener;
     Boolean mState = false;
 
-    static public long waitTime_ = 5000;
+    static public int waitTime_ = 0;
 
     static public double latitude_ = 0.;
     static public double longitude_ = 0.;
@@ -86,10 +86,10 @@ public class LocationActivity extends Activity {
             String maString = inputView.getText().toString();
             if (!maString.equals(""))
             {
-            	waitTime_ = 5000;
-                Long maLong = 5000L;
-            	maLong.parseLong(maString);
-            	waitTime_ = maLong;
+            	waitTime_ = 0;
+                int monInt = 0;
+                monInt = Integer.parseInt(maString);
+            	waitTime_ = monInt;
             }
             LocationManager lm = (LocationManager) getSystemService(LOCATION_SERVICE);
 
@@ -174,6 +174,7 @@ public class LocationActivity extends Activity {
 
         Log.d("Located", Text);
         tView.setText(Text);
+        if (waitTime_ > 0.)
         {
             LocationManager lm = (LocationManager) getSystemService(LOCATION_SERVICE);
             lm.removeUpdates(mlocListener); mState = false; // VR todo 16-11-12 : pas garanti du tout si ca crashe
